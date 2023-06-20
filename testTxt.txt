@@ -1,0 +1,100 @@
+
+
+Question 1:
+
+cpp
+Copy code
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int result = add(5);
+    return 0;
+}
+What will be the value of the "result" variable after executing the above code?
+a) 5
+b) 0
+c) Garbage value
+d) Compiler error
+
+Answer: c) Garbage value
+
+Explanation: The function "add" expects two arguments, but only one argument is passed during the function call. The value of the second argument (y) is uninitialized, resulting in a garbage value.
+
+Question 2:
+
+cpp
+Copy code
+inline int multiply(int x, int y) {
+    return x * y;
+}
+
+int main() {
+    int result = multiply(5, 7);
+    return 0;
+}
+What is the purpose of the "inline" keyword in the above code?
+a) It indicates that the function can only be called within the same source file.
+b) It suggests the compiler to perform inline expansion of the function.
+c) It ensures that the function is called before any other functions in the code.
+d) It forces the function to be included in a separate library file.
+
+Answer: b) It suggests the compiler to perform inline expansion of the function.
+
+Explanation: The "inline" keyword is used to suggest the compiler to perform inline expansion of the function, which means that the function call will be replaced with the actual function code during compilation for potential performance improvements.
+
+Question 3:
+
+cpp
+Copy code
+int sum(int x, int y = 0) {
+    return x + y;
+}
+
+int main() {
+    int result = sum(5);
+    return 0;
+}
+What will be the value of the "result" variable after executing the above code?
+a) 0
+b) 5
+c) 10
+d) Compiler error
+
+Answer: b) 5
+
+Explanation: The function "sum" has a default argument of 0 for the parameter "y". When only one argument is passed during the function call, the default argument is used for the missing argument, resulting in a sum of 5.
+
+Question 4:
+
+cpp
+Copy code
+int multiply(int x, int y) {
+    return x * y;
+}
+
+float multiply(float x, float y) {
+    return x * y;
+}
+
+int main() {
+    int result1 = multiply(5, 7);
+    float result2 = multiply(2.5, 3.5);
+    return 0;
+}
+What will be the types of "result1" and "result2" variables after executing the above code?
+a) int, int
+b) float, float
+c) int, float
+d) float, int
+
+Answer: c) int, float
+
+Explanation: The function "multiply" is overloaded with two versions: one for integers and another for floats. The type of "result1" will be int because the integer version of "multiply" is called, and the type of "result2" will be float because the float version of "multiply" is called.
+
+These expert-level coding-based multiple-choice questions will test your understanding of functions, inline functions, default function arguments, and function overloading in C++. Make sure to thoroughly analyze the code snippets and options before selecting the correct answer.
+
+
+
+
